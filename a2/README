@@ -1,0 +1,15 @@
+A C program targeted at the Linux platform which checks whether a spcified word, passed as an argument to the excutable, exists in a dictionary or not.
+
+Files:
+	ok.c
+	Makefile
+
+Run:
+	*type make in the command line will complie the code then to run the program type ./ok word
+	*OR type "make run word=(word)"   Where(word) is the word that you want to check.
+
+This program will also be able to let people change pathnames by changing defined path "location_name". And change word length if the dictionary have different word length by changing defined value "word_length".
+
+The program can also display debug messages by:
+	*remove the first "//" in line 17
+	*OR type "gcc -DDEBUG_MSG ok.c" in command line then run "./a.out" + a "word" that you want to search.
